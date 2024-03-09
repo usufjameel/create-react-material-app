@@ -1,0 +1,18 @@
+.mtext_field_component {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+
+  .label {
+    margin-left: 4px;
+    font-family: MontserratMedium, serif;
+  }
+
+  .minput {
+    font-size: 16px;
+    font-family: MontserratRegular, serif;
+    transition: all 250ms ease-in-out;
+    margin-bottom: 12px;
+    flex: 1;
+  }
+}

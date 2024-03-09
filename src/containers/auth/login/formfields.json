@@ -1,0 +1,233 @@
+[
+  {
+    "label": "First name",
+    "key": "firstName",
+    "placeholder": "",
+    "type": "text",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half",
+    "salutation": ["Mr.", "Mrs.", "Ms."]
+  },
+  {
+    "label": "Last name / Surname",
+    "key": "lastName",
+    "placeholder": "",
+    "type": "text",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "Mother's name",
+    "key": "mothersName",
+    "placeholder": "",
+    "type": "text",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "Father's name",
+    "key": "fathersName",
+    "placeholder": "",
+    "type": "text",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "Blood group",
+    "key": "bloodGroup",
+    "placeholder": "",
+    "type": "dropdown",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half",
+    "options": ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-", "Don't know"]
+  },
+  {
+    "label": "Gender",
+    "key": "gender",
+    "placeholder": "",
+    "type": "dropdown",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "quarter",
+    "options": ["Male", "Female", "Other"]
+  },
+  {
+    "label": "Date of birth",
+    "key": "dateOfBirth",
+    "placeholder": "",
+    "type": "datepicker",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "quarter"
+  },
+  {
+    "label": "Marital Status",
+    "key": "maritalStatus",
+    "placeholder": "",
+    "type": "dropdown",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half",
+    "options": ["Single", "Married", "Separated", "Widowed"]
+  },
+  {
+    "label": "Spouse name",
+    "key": "spouseName",
+    "placeholder": "",
+    "type": "text",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half",
+    "disabled": {
+      "value": true,
+      "condition": {
+        "fields": [
+          {
+            "key": "maritalStatus",
+            "values": ["Married"]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "label": "Mobile number",
+    "key": "mobile",
+    "placeholder": "",
+    "type": "mobile",
+    "required": true,
+    "numberOfCharacters": 10,
+    "size": "half"
+  },
+  {
+    "label": "Email address",
+    "key": "email",
+    "placeholder": "",
+    "type": "text",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "House No.,Society/Building Name",
+    "key": "society",
+    "placeholder": "",
+    "type": "text",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "Street/Area",
+    "key": "street",
+    "placeholder": "",
+    "type": "text",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "Landmark (Optional)",
+    "key": "landMark",
+    "placeholder": "",
+    "type": "text",
+    "required": false,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "Zipcode/Pincode",
+    "key": "zip",
+    "placeholder": "",
+    "type": "text",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "Country",
+    "key": "country",
+    "placeholder": "",
+    "type": "country",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "State",
+    "key": "state",
+    "placeholder": "",
+    "type": "state",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "City",
+    "key": "city",
+    "placeholder": "",
+    "type": "city",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "Memon Jamaat",
+    "key": "jamaat",
+    "placeholder": "",
+    "type": "jamaat",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "What I Do?",
+    "key": "profession",
+    "placeholder": "",
+    "type": "dropdown",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half",
+    "options": ["Employed", "Self Employed", "Student", "Home maker", "Retired"]
+  },
+  {
+    "label": "What I studied?",
+    "key": "qualification",
+    "placeholder": "",
+    "type": "dropdown",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half",
+    "options": [
+      "Pre primary",
+      "Higher secondary",
+      "Under graduate",
+      "Graduate",
+      "Post graduate",
+      "Doctorate"
+    ]
+  },
+  {
+    "label": "Set password",
+    "key": "password",
+    "placeholder": "",
+    "type": "password",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  },
+  {
+    "label": "Confirmed password",
+    "key": "confirmPassword",
+    "placeholder": "",
+    "type": "password",
+    "required": true,
+    "numberOfCharacters": 0,
+    "size": "half"
+  }
+]

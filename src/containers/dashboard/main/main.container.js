@@ -1,16 +1,9 @@
 import { useEffect } from "react";
-import "./App.scss";
+import "./main.container.scss";
 import { Outlet, redirect, useNavigate } from "react-router";
 
-function App() {
+function Main() {
   let navigate = useNavigate();
-  let authenticate = "asjgdhjaghjd";
-
-  useEffect(() => {
-    if (authenticate) {
-      navigate("/user");
-    }
-  }, []);
   return (
     <>
       {/* all the other elements */}
@@ -21,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
