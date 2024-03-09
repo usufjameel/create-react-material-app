@@ -1,2 +1,2 @@
-import SideLeftToolbar from "./SideLeftToolbar";
+import SideLeftToolbar from "./SideLeftToolbars";
 export default SideLeftToolbar;
