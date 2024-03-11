@@ -1,17 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.scss";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import ErrorPage from "./ErrorPage";
-import Login from "./containers/auth/login";
-import Register from "./containers/auth/register";
 import "@fontsource/montserrat/300.css";
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/500.css";
 import "@fontsource/montserrat/700.css";
-import Main from "./containers/dashboard/main/main.container";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.scss";
+import reportWebVitals from "./reportWebVitals";
 import AppRouters from "./routers";
 
 const router = createBrowserRouter(AppRouters);

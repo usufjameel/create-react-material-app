@@ -1,17 +1,13 @@
 import { useEffect } from "react";
-import "./main.container.scss";
 import { Outlet, redirect, useNavigate } from "react-router";
 
-function Main() {
+function AddNotification() {
   let navigate = useNavigate();
   return (
     <>
-      {/* all the other elements */}
-      <div id="detail">
-        <Outlet />
-      </div>
+      <div>Add Notification</div>
     </>
   );
 }
 
-export default Main;
+export default AddNotification;
