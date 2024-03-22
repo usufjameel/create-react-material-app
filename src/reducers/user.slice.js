@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import SessionDetails from "../helpers/sessionDetails";
 
 const userSlice = createSlice({
   name: "user",

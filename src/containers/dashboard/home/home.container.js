@@ -6,6 +6,7 @@ import { logout } from "../../../reducers/user.slice";
 import { SnackbarType, openSnackbar } from "../../../reducers/snackbar.slice";
 import { startLoading, stopLoading } from "../../../reducers/loading.slice";
 import { ActionType, openDialog } from "../../../reducers/dialog.slice";
+import SessionDetails from "../../../helpers/sessionDetails";
 
 function Home() {
   let navigate = useNavigate();
@@ -69,6 +70,14 @@ function Home() {
         }}
       >
         Dialog
+      </button>
+      <br />
+      <button
+        onClick={() => {
+          SessionDetails.clearStoredData();
+        }}
+      >
+        Clear store
       </button>
     </>
   );
