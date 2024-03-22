@@ -1,4 +1,3 @@
-import { Login } from "@mui/icons-material";
 import ErrorPage from "./ErrorPage";
 import Register from "./containers/auth/register";
 import Dashboard from "./containers/dashboard";
@@ -9,6 +8,7 @@ import AdminNotifications from "./containers/dashboard/notifications/adminNotifi
 import AddNotification from "./containers/dashboard/notifications/addNotification";
 import Notifications from "./containers/dashboard/notifications";
 import AuthContainer from "./containers/auth";
+import Login from "./containers/auth/login";
 
 const AppRouters = [
   {

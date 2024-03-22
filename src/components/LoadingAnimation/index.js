@@ -1,2 +1,2 @@
-import LoadingAnimation from './loadingAnimation'
+import LoadingAnimation from "./LoadingAnimation";
 export default LoadingAnimation;

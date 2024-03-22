@@ -1,20 +1,26 @@
+import { createRoot } from "react-dom/client";
+
 import "@fontsource/montserrat/300.css";
 import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/500.css";
 import "@fontsource/montserrat/700.css";
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
+import App from "./containers/App";
 import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
-import AppRouters from "./routers";
+import { persistor, store } from "./store";
 
-const router = createBrowserRouter(AppRouters);
+const root = createRoot(document.getElementById("root"));
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <App />
+      </PersistGate>
+    </Provider>
   </React.StrictMode>
 );
 

@@ -1,7 +1,7 @@
 import CircularProgress from "@material-ui/core/CircularProgress";
-import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import "./loadingAnimation.scss";
+import "./LoadingAnimation.scss";
+import { useSelector } from "react-redux";
 
 /**
  * A React component that displays a loading animation.
@@ -9,11 +9,13 @@ import "./loadingAnimation.scss";
  */
 
 export default function LoadingAnimation() {
-  return (
+  const isLoading = useSelector((state) => state?.loader?.isLoading ?? false);
+
+  return isLoading ? (
     <div className={"loading-animation"} data-testid="loading-animation">
       <div className={"square"}>
         <CircularProgress color="inherit" data-testid="circular-progress" />
       </div>
     </div>
-  );
+  ) : null;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import AppFooter from './appFooter';
+import AppFooter from './AppFooter';
 
 describe('AppFooter Component', () => {
   test('renders without errors', () => {
