@@ -10,7 +10,7 @@ export class Endpoint {
 
 // ------------------------------ Status codes ---------------------------
 
-export class HttpStatus {
+export class Status {
   static API_SUCCESS = 200;
   static API_CREATED = 201;
   static API_ACCEPTED = 202;
